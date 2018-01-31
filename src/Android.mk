@@ -42,9 +42,10 @@ LOCAL_CFLAGS := \
 	-DHAVE_ASPRINTF
 LOCAL_SHARED_LIBRARIES := \
 	libplist \
-	libssl \
 	libcrypto_openssl \
 	libusbmuxd \
 	libimobilecommon
+LOCAL_STATIC_LIBRARIES := \
+	libssl_static_openssl
 
 include $(BUILD_SHARED_LIBRARY)
